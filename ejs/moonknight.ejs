@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>mooncock</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="header__content">
+            <a href="mainpage" class="header_logo">MovieSite</a>
+            <a href="mainpage" class="header_logo2">Trends</a>
+            <a href="2page" class="header_logoT">Online Cinema</a>
+            <a href="account" class="header_logo2">Account</a>
+
+
+            <div id="nav" class="navigation">
+                <div class="navigation__inner">
+                    <div class="google">
+                        <input id="search" type="text" name="search" class="header_search" placeholder="Google SRCH!">
+                        <input type="submit" name="submit" class="header_search" value="Search" class="buttongoogle"
+                            onclick="search()">
+                           
+                        <script>
+                            function search() {
+                                const str = document.getElementById("search").value;
+                                const word = str.replaceAll(' ', '+');
+                                window.open("https://www.google.com/search?q=" + word);
+                            }
+                        </script>
+                    </div>
+                </div></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="preview">
+            <img src="https://static.hdrezka.ac/i/2021/12/14/jddf7b4a3a4c8og92n21b.jpg" </div>
+            <div class="overview">
+                <div class="movie__title2">REview</div>
+                <div class="movie__category">Майкл Морбиус с детства страдает от редкого заболевания крови и всю свою
+                    сознательную жизнь посвятил поискам лекарства. В какой-то момент Майкл видит возможное спасение в
+                    крови летучих мышей и решается на рискованный эксперимент. Опыт вызывает неожиданную реакцию:
+                    вступив в связь с больными клетками, он меняет тело Морбиуса, превращая его в кровожадного монстра.
+                </div>
+            </div>
+            <div class="moviewatch">
+                <div class="movie__title2">Watch The Movie</div>
+                <img src="https://static.hdrezka.ac/i/2021/12/14/jddf7b4a3a4c8og92n21b.jpg" </div>
+            </div>
+        </div>
+</body>
+
+</html>

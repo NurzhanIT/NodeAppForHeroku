@@ -1,0 +1,72 @@
+
+1<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>uncharted</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="header__content">
+            <a href="mainpage" class="header_logo">MovieSite</a>
+            <a href="mainpage" class="header_logo2">Trends</a>
+            <a href="2page" class="header_logoT">Online Cinema</a>
+            <a href="account" class="header_logo2">Account</a>
+
+            <div id="nav" class="navigation">
+                <div class="navigation__inner">
+                    <div class="google">
+                        <input id="search" type="text" name="search" class="header_search" placeholder="Google SRCH!">
+                        <input type="submit" name="submit" class="header_search" value="Search" class="buttongoogle"
+                            onclick="search()">
+                           
+                        <script>
+                            function search() {
+                                const str = document.getElementById("search").value;
+                                const word = str.replaceAll(' ', '+');
+                                window.open("https://www.google.com/search?q=" + word);
+                            }
+                        </script>
+                    </div>
+                </div></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="preview">
+            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/3ddc0946-5e53-4f7a-b355-cd42c2280f9e/300x450"
+                </div>
+            <div class="overview">
+                <div class="movie__title2">REview</div>
+                <div class="movie__category">Давно прошла Золотая эпоха пиратов, оставив позади отчаянные абордажи и
+                    бескомпромиссные морские сражения, но её отголоски доходят до нас и по сей день. Одним из первых
+                    знаменитых флибустьеров был без сомнения Френсис Дрейк, который мастерски маневрируя на своём
+                    быстром судне «Золотая лань», не один раз выходил победителем, сражаясь с превосходящими его в
+                    огневой мощи медлительными противниками. Возвращаясь каждый раз с доверху набитыми золотом трюмами,
+                    Дрейк спустя некоторое время заслужил не только покровительство королевы Елизаветы I, но и рыцарский
+                    титул за обогащение Английской казны. Благодаря отважным отчаянным действиям, Френсис навеки вписал
+                    своё имя в мировую историю как один из самых известных пиратов. А после того, как прославленный
+                    флибустьер умер во время одного из плаваний, его тело было похоронено в океане в свинцовом гробу.
+                    Спустя долгих четыреста лет в найденном гробу великого пирата находят ключ, дающий возможность
+                    добраться к несметным сокровищам Эльдорадо. После того, как ключ попадает к Натану Дрейку, потомку
+                    отважного пирата, тот отправляется в опасное путешествие к берегам загадочного острова, затерянного
+                    на просторах величественного Тихого океана. Однако, не долетев до пункта назначения, самолёт нашего
+                    героя терпит крушение, после чего Натан оказывается в весьма непростом положении.
+                </div>
+            </div>
+            <div class="moviewatch">
+                <div class="movie__title2">Watch The Movie</div>
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/3ddc0946-5e53-4f7a-b355-cd42c2280f9e/300x450"
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

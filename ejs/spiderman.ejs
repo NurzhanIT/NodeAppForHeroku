@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>spidermanb</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="header__content">
+            <a href="mainpage" class="header_logo">MovieSite</a>
+            <a href="mainpage" class="header_logo2">Trends</a>
+            <a href="2page" class="header_logoT">Online Cinema</a>
+            <a href="account" class="header_logo2">Account</a>
+
+
+            <div id="nav" class="navigation">
+                <div class="navigation__inner">
+                    <div class="google">
+                        <input id="search" type="text" name="search" class="header_search" placeholder="Google SRCH!">
+                        <input type="submit" name="submit" class="header_search" value="Search" class="buttongoogle"
+                            onclick="search()">
+                           
+                        <script>
+                            function search() {
+                                const str = document.getElementById("search").value;
+                                const word = str.replaceAll(' ', '+');
+                                window.open("https://www.google.com/search?q=" + word);
+                            }
+                        </script>
+                    </div>
+                </div></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="preview">
+            <img src="https://kinopoiskapiunofficial.tech/images/posters/kp_small/1309570.jpg" </div>
+            <div class="overview">
+                <div class="movie__title2">REview</div>
+                <div class="movie__category">После победы над Мистерио личность Питера Паркера раскрывается всему миру,
+                    что ставит под угрозу его жизнь и миссию в роли Человека-паука. В поисках себе нового наставника, он
+                    обращается за помощью к Мастеру мистических искусств, доктору Стивену Стрэнджу, который имеет в
+                    своем арсенале на этот случай специальное заклинание. Из-за роковой случайности обряд идет не по
+                    плану, в результате чего появляются разрывы в мультивселенной, через которые на Землю проникают
+                    враги Человека-паука из альтернативных миров, в том числе Зеленый гоблин и безумный ученый Отто
+                    Октавиус.
+                </div>
+            </div>
+            <div class="moviewatch">
+                <div class="movie__title2">Watch The Movie</div>
+                <img src="https://kinopoiskapiunofficial.tech/images/posters/kp_small/1309570.jpg" </div>
+            </div>
+        </div>
+</body>
+
+</html>
